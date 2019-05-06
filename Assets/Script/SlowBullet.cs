@@ -28,7 +28,6 @@ public class SlowBullet : MonoBehaviour {
             Destroy(gameObject);
             timer = 0;
         }
-   
 
     }
    

@@ -57,6 +57,7 @@ public class WizardTower : MonoBehaviour {
             bullet.GetComponent<Bullet>().damage = damage;
             Instantiate(bullet, transform.position, Quaternion.identity);
             attackCooldown = 3f;
+            SoundManager.PlaySound("electric");
         }
     }
 }
