@@ -45,6 +45,7 @@ public class Enemy : MonoBehaviour {
         if (collision.tag == "End")
         {
             FindObjectOfType<GameManager>().health -= damage;
+            dropMoney = 0;
             health = 0;
         }
         if (collision.tag == "SlowBullet")

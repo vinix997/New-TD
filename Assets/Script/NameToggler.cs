@@ -28,6 +28,7 @@ public class NameToggler : MonoBehaviour {
             clicked = true;
             if (upgradeButton != null || demolishButton != null)
             {
+                if(upgradeButton != null)
                 upgradeButton.SetActive(false);
                 demolishButton.SetActive(false);
             }
@@ -38,7 +39,8 @@ public class NameToggler : MonoBehaviour {
             clicked = false;
             if (upgradeButton != null || demolishButton != null)
             {
-                upgradeButton.SetActive(true);
+                if (upgradeButton != null)
+                    upgradeButton.SetActive(true);
                 demolishButton.SetActive(true);
             }
             towerName.SetActive(true);
