@@ -32,6 +32,7 @@ public class AoE_Bullet : MonoBehaviour {
         if (timer >= vanishTime)
         {
             Destroy(gameObject);
+            
         }
 
 

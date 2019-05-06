@@ -37,6 +37,7 @@ public class AoE_BulletPrep : MonoBehaviour {
                 explosion.GetComponent<AoE_Bullet>().damage = damage;
                 Instantiate(explosion, transform.position, Quaternion.identity);
             }
+
             Destroy(gameObject);
         }
 

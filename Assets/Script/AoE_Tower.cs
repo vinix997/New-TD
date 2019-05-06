@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class AoE_Tower : MonoBehaviour {
 
@@ -15,6 +16,9 @@ public class AoE_Tower : MonoBehaviour {
     [SerializeField]
     private GameObject enemy;
 
+    //[SerializeField]
+    //private AudioClip atk;
+
     public GameObject land;
 
     public int price;
@@ -23,6 +27,9 @@ public class AoE_Tower : MonoBehaviour {
 
     public float cooldownTime;
     private float attackCooldown;
+    private float timer;
+
+    public float attackCooldown;
 
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -61,6 +68,8 @@ public class AoE_Tower : MonoBehaviour {
         {
             bullet.GetComponent<AoE_BulletPrep>().enemy = enemy.transform;
             bullet.GetComponent<AoE_BulletPrep>().damage = damage;
+            timer += Time.deltaTime;
+
             Instantiate(bullet, transform.position, Quaternion.identity);
             attackCooldown = cooldownTime;
         }
