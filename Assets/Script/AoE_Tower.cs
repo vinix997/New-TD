@@ -29,8 +29,6 @@ public class AoE_Tower : MonoBehaviour {
     private float attackCooldown;
     private float timer;
 
-    public float attackCooldown;
-
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (enemy == null && collision.tag == "Enemy")
