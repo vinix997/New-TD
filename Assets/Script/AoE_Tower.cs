@@ -21,7 +21,8 @@ public class AoE_Tower : MonoBehaviour {
 
     public float damage;
 
-    public float attackCooldown;
+    public float cooldownTime;
+    private float attackCooldown;
 
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -61,7 +62,7 @@ public class AoE_Tower : MonoBehaviour {
             bullet.GetComponent<AoE_BulletPrep>().enemy = enemy.transform;
             bullet.GetComponent<AoE_BulletPrep>().damage = damage;
             Instantiate(bullet, transform.position, Quaternion.identity);
-            attackCooldown = 3f;
+            attackCooldown = cooldownTime;
         }
     }
 }

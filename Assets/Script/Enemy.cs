@@ -8,7 +8,7 @@ public class Enemy : MonoBehaviour {
     private float timer;
 
     [SerializeField]
-    private int dropMoney;
+    private int dropMoney,damage;
     public float health;
 
     // Array of waypoints to walk from one to the next one
@@ -42,8 +42,9 @@ public class Enemy : MonoBehaviour {
             health -= collision.GetComponent<Bullet>().damage;
             Destroy(collision.gameObject);
         }
-        if(collision.tag == "End")
+        if (collision.tag == "End")
         {
+            FindObjectOfType<GameManager>().health -= damage;
             health = 0;
         }
         if (collision.tag == "SlowBullet")

@@ -16,7 +16,8 @@ public class WizardTower : MonoBehaviour {
 
     public GameObject land;
 
-    public float attackCooldown;
+    public float cooldownTime;
+    private float attackCooldown;
 
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -56,7 +57,7 @@ public class WizardTower : MonoBehaviour {
             }
             bullet.GetComponent<Bullet>().damage = damage;
             Instantiate(bullet, transform.position, Quaternion.identity);
-            attackCooldown = 3f;
+            attackCooldown = cooldownTime;
         }
     }
 }

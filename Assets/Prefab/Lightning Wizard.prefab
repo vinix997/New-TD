@@ -100,7 +100,7 @@ MonoBehaviour:
   price: 8
   damage: 3
   land: {fileID: 0}
-  attackCooldown: 1
+  cooldownTime: 1
 --- !u!212 &212354353067667372
 SpriteRenderer:
   m_ObjectHideFlags: 1

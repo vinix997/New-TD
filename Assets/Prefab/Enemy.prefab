@@ -99,6 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0082ce5da5202d54b8609707e9b6de02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dropMoney: 10
+  damage: 5
   health: 3
   waypoints: {fileID: 4278347123645380, guid: e8fc33654bf78e64e930943da5b99f95, type: 2}
   moveSpeed: 5
