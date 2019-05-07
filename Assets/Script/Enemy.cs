@@ -10,7 +10,7 @@ public class Enemy : MonoBehaviour {
     public Image healthBar;
 
     [SerializeField]
-    private int dropMoney,damage;
+    private int dropMoney,damage,dropScore;
     private float health;
     public float startHealth;
     // Array of waypoints to walk from one to the next one
@@ -79,6 +79,7 @@ public class Enemy : MonoBehaviour {
         if (health <= 0)
         {
             FindObjectOfType<GameManager>().money += dropMoney;
+            FindObjectOfType<GameManager>().score += dropScore;
             Destroy(this.gameObject);
         }
     }

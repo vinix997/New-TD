@@ -155,6 +155,7 @@ MonoBehaviour:
   healthBar: {fileID: 114997091143916318}
   dropMoney: 10
   damage: 5
+  dropScore: 100
   startHealth: 3
   waypoints: {fileID: 4278347123645380, guid: e8fc33654bf78e64e930943da5b99f95, type: 2}
   moveSpeed: 5
