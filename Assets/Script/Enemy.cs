@@ -1,26 +1,32 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class Enemy : MonoBehaviour {
 
     private bool isHitSlow= false;
     private float timer;
+    [Header("Unity Stuff")]
+    public Image healthBar;
 
     [SerializeField]
     private int dropMoney,damage;
-    public float health;
-
+    private float health;
+    public float startHealth;
     // Array of waypoints to walk from one to the next one
     public Transform waypoints;
 
     // Walk speed that can be set in Inspector
     [SerializeField]
     private float moveSpeed = 2f;
-    
+    void Start()
+    {
+        health=startHealth;
+    }
 	// Update is called once per frame
 	void Update () {
        // transform.Translate(Vector2.right * Time.deltaTime * speed);
+        healthBar.fillAmount = health / startHealth ;
         Move();
         CheckDeath();
         if (isHitSlow == true)
