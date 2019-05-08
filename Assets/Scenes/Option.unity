@@ -496,6 +496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b8758c4371bb2247a2b42950e8d7a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onSwitch: {fileID: 72000430}
 --- !u!1 &176895223
 GameObject:
   m_ObjectHideFlags: 0
@@ -887,6 +888,7 @@ MonoBehaviour:
   mainMenu: {fileID: 24100000, guid: 36b8956d206372d4282149f48c14c4be, type: 2}
   ingame: {fileID: 24100000, guid: 36b8956d206372d4282149f48c14c4be, type: 2}
   save: 0
+  vol: {fileID: 351713570}
 --- !u!1 &677277857
 GameObject:
   m_ObjectHideFlags: 0
