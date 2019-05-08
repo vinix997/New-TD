@@ -12,27 +12,33 @@ public class GameManager : MonoBehaviour {
 
     [SerializeField] private Text moneyText,scoreText;
 
-    [SerializeField] private Slider healthSlider;
+    [Header("Unity Stuff")]
+    public Image playerHealth;
+
+   // [SerializeField] private Slider healthSlider;
 
     public GameObject selectedWizard;
 
-    public int money,maxhealth,score;
+    public int money,score;
     //int counter = 0;
-    public int health;
+    public float health;
+    public float maxHealth;
     private float spawnCooldown;
 
 	// Use this for initialization
 	void Start () {
         score = 0;
-        health = maxhealth;
+        health = maxHealth;
         spawnCooldown = 2f;
-        healthSlider.maxValue = maxhealth;
-        healthSlider.value = health;
+        // healthSlider.maxValue = maxhealth;
+        // healthSlider.value = health;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        healthSlider.value = health;
+       // healthSlider.value = health;
+       
+        playerHealth.fillAmount = health / maxHealth;
         moneyText.text = "Money : " + money.ToString();
         scoreText.text = "Score : " + score.ToString();
         spawnCooldown -= Time.deltaTime;
