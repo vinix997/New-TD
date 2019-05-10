@@ -51,10 +51,10 @@ public class AoE_Tower : MonoBehaviour {
         attackCooldown = 3f;
         demolishButton.GetComponent<DemolishTower>().tower = gameObject;
         demolishButton.GetComponent<DemolishTower>().land = land;
-        nameButton.GetComponent<NameToggler>().demolishButton = Instantiate(demolishButton, transform.position + new Vector3(-8, -8), Quaternion.identity, transform);
-        nameButton.GetComponent<NameToggler>().towerName = Instantiate(towerName, transform.position + new Vector3(0, 10), Quaternion.identity, transform);
+        nameButton.GetComponent<NameToggler>().demolishButton = Instantiate(demolishButton, transform.position + new Vector3(-4, -4), Quaternion.identity, transform);
+        nameButton.GetComponent<NameToggler>().towerName = Instantiate(towerName, transform.position + new Vector3(0, 5), Quaternion.identity, transform);
         upgradeButton.GetComponent<UpgradeButton>().tower = gameObject;
-        nameButton.GetComponent<NameToggler>().upgradeButton = Instantiate(upgradeButton, transform.position+new Vector3(8,-8), Quaternion.identity, transform);
+        nameButton.GetComponent<NameToggler>().upgradeButton = Instantiate(upgradeButton, transform.position+new Vector3(4,-4), Quaternion.identity, transform);
         Instantiate(nameButton, transform.position, Quaternion.identity, transform).GetComponent<NameToggler>();
         
     }
