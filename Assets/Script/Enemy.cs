@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour {
     private float timer;
     [Header("Unity Stuff")]
     public Image healthBar;
+    public GameObject lightning;
 
     [SerializeField]
     private int dropMoney,damage,dropScore;
@@ -82,5 +83,12 @@ public class Enemy : MonoBehaviour {
             FindObjectOfType<GameManager>().score += dropScore;
             Destroy(this.gameObject);
         }
+    }
+
+    public void TakeDamage(float damage)
+    {
+        health -= damage;
+        lightning.GetComponent<LightningHandler>().cooldown = 0.5f;
+        lightning.SetActive(true);
     }
 }

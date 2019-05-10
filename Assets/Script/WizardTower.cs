@@ -49,14 +49,25 @@ public class WizardTower : MonoBehaviour {
     private void Update()
     {
         attackCooldown -= Time.deltaTime;
+        //if (enemy != null && attackCooldown <= 0)
+        //{
+        //    if (bullet.GetComponent<Bullet>() != null)
+        //    {
+        //        bullet.GetComponent<Bullet>().enemy = enemy;
+        //    }
+        //    bullet.GetComponent<Bullet>().damage = damage;
+        //    Instantiate(bullet, transform.position, Quaternion.identity);
+        //    attackCooldown = cooldownTime;
+        //    SoundManager.PlaySound("electric");
+        //}
+        Attack();
+    }
+
+    private void Attack()
+    {
         if (enemy != null && attackCooldown <= 0)
         {
-            if (bullet.GetComponent<Bullet>() != null)
-            {
-                bullet.GetComponent<Bullet>().enemy = enemy;
-            }
-            bullet.GetComponent<Bullet>().damage = damage;
-            Instantiate(bullet, transform.position, Quaternion.identity);
+            enemy.GetComponent<Enemy>().TakeDamage(damage);
             attackCooldown = cooldownTime;
             SoundManager.PlaySound("electric");
         }
