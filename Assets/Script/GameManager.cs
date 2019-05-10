@@ -30,6 +30,8 @@ public class GameManager : MonoBehaviour {
     public float maxHealth;
     private float spawnCooldown;
     private float spawnCooldown2;
+    public float range = 10f;
+    public float rangeHard = 20f;
 
 	// Use this for initialization
 	void Start () {
@@ -49,18 +51,20 @@ public class GameManager : MonoBehaviour {
         scoreText.text = "Score : " + score.ToString();
         spawnCooldown -= Time.deltaTime;
         spawnCooldown2 -= Time.deltaTime;
+        range += Time.deltaTime * (0.5f);
+        rangeHard += Time.deltaTime * (0.5f);
         
         if(spawnCooldown <= 0)
         {
             Instantiate(enemy,spawnPoint.position,Quaternion.identity);
-            enemy.GetComponent<Enemy>().startHealth=(Random.Range(10,30));
+            enemy.GetComponent<Enemy>().startHealth=(Random.Range(range,range+20));
             spawnCooldown = 2f;
             //counter++;
         }
         if(spawnCooldown2 <= 0)
         {
             Instantiate(enemy2,spawnPoint2.position,Quaternion.identity);
-            enemy2.GetComponent<Enemy>().startHealth=(Random.Range(20,40));
+            enemy2.GetComponent<Enemy>().startHealth=(Random.Range(rangeHard,rangeHard+20));
             spawnCooldown2 = 2.5f;
         }
         //if (counter >= 3)
