@@ -500,8 +500,26 @@ Prefab:
     - target: {fileID: 114787831809650398, guid: 92e16cab0adb86d41828b56de30272da,
         type: 2}
       propertyPath: m_Color.a
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114758779952121086, guid: 92e16cab0adb86d41828b56de30272da,
+        type: 2}
+      propertyPath: idle
+      value: 
+      objectReference: {fileID: 21300000, guid: 7e4f4922cd063a04eb15850b1f394768,
+        type: 3}
+    - target: {fileID: 114758779952121086, guid: 92e16cab0adb86d41828b56de30272da,
+        type: 2}
+      propertyPath: pressed
+      value: 
+      objectReference: {fileID: 21300000, guid: 6b5211ea90f4cf74bb34a02f1a3afb93,
+        type: 3}
+    - target: {fileID: 114787831809650398, guid: 92e16cab0adb86d41828b56de30272da,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7e4f4922cd063a04eb15850b1f394768,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92e16cab0adb86d41828b56de30272da, type: 2}
   m_IsPrefabAsset: 0
@@ -752,6 +770,18 @@ Prefab:
       propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114758779952121086, guid: 92e16cab0adb86d41828b56de30272da,
+        type: 2}
+      propertyPath: idle
+      value: 
+      objectReference: {fileID: 21300000, guid: 276a6ec6064856e4b8fb122b2914e8f2,
+        type: 3}
+    - target: {fileID: 114758779952121086, guid: 92e16cab0adb86d41828b56de30272da,
+        type: 2}
+      propertyPath: pressed
+      value: 
+      objectReference: {fileID: 21300000, guid: 260b64122f1288c43a08431c15155186,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92e16cab0adb86d41828b56de30272da, type: 2}
   m_IsPrefabAsset: 0
@@ -5087,7 +5117,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 234.6, y: 26}
+  m_AnchoredPosition: {x: 369.6, y: 26}
   m_SizeDelta: {x: 74.8, y: 31.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1080325020
@@ -7075,6 +7105,18 @@ Prefab:
       propertyPath: m_Size.y
       value: 2.13
       objectReference: {fileID: 0}
+    - target: {fileID: 114758779952121086, guid: 92e16cab0adb86d41828b56de30272da,
+        type: 2}
+      propertyPath: idle
+      value: 
+      objectReference: {fileID: 21300000, guid: a980be03a5071f849aa8a6b01e694e2f,
+        type: 3}
+    - target: {fileID: 114758779952121086, guid: 92e16cab0adb86d41828b56de30272da,
+        type: 2}
+      propertyPath: pressed
+      value: 
+      objectReference: {fileID: 21300000, guid: 8ed5fb6ae3b5e76418d6f697fdcf263f,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92e16cab0adb86d41828b56de30272da, type: 2}
   m_IsPrefabAsset: 0
