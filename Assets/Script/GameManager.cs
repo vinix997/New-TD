@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour {
 
     [SerializeField] private GameObject enemy;
 
-    [SerializeField]private Vector3 spawnPoint;
+    [SerializeField]private Transform spawnPoint;
 
     [SerializeField] private Text moneyText,scoreText;
 
@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour {
         spawnCooldown -= Time.deltaTime;
         if(spawnCooldown <= 0)
         {
-            Instantiate(enemy,spawnPoint,Quaternion.identity);
+            Instantiate(enemy,spawnPoint.position,Quaternion.identity);
             spawnCooldown = 2f;
             //counter++;
         }
