@@ -8,7 +8,11 @@ public class GameManager : MonoBehaviour {
 
     [SerializeField] private GameObject enemy;
 
+    [SerializeField] private GameObject enemy2;
+
     [SerializeField]private Transform spawnPoint;
+
+    [SerializeField]private Transform spawnPoint2;
 
     [SerializeField] private Text moneyText,scoreText;
 
@@ -25,6 +29,7 @@ public class GameManager : MonoBehaviour {
     public float health;
     public float maxHealth;
     private float spawnCooldown;
+    private float spawnCooldown2;
 
 	// Use this for initialization
 	void Start () {
@@ -34,6 +39,7 @@ public class GameManager : MonoBehaviour {
         //loseScreen = GameObject.FindGameObjectWithTag("OverScreen");
         // healthSlider.maxValue = maxhealth;
         // healthSlider.value = health;
+        spawnCooldown2 = 2.5f;
 	}
 	
 	// Update is called once per frame
@@ -42,11 +48,17 @@ public class GameManager : MonoBehaviour {
         moneyText.text = ": " + money.ToString();
         scoreText.text = "Score : " + score.ToString();
         spawnCooldown -= Time.deltaTime;
+        spawnCooldown2 -= Time.deltaTime;
         if(spawnCooldown <= 0)
         {
             Instantiate(enemy,spawnPoint.position,Quaternion.identity);
             spawnCooldown = 2f;
             //counter++;
+        }
+        if(spawnCooldown2 <= 0)
+        {
+            Instantiate(enemy2,spawnPoint2.position,Quaternion.identity);
+            spawnCooldown2 = 2.5f;
         }
         //if (counter >= 3)
         //    spawnCooldown = 15f;

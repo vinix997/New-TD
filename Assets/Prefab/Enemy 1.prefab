@@ -23,9 +23,8 @@ GameObject:
   - component: {fileID: 114153806177629712}
   - component: {fileID: 61700533001294638}
   - component: {fileID: 50011020060945164}
-  - component: {fileID: 114940610847469718}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: Enemy 1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -205,12 +204,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 114997091143916318}
   lightning: {fileID: 0}
-  dropMoney: 10
-  damage: 5
+  dropMoney: 15
+  damage: 10
   dropScore: 100
-  startHealth: 10
+  startHealth: 30
   waypoints: {fileID: 4278347123645380, guid: e8fc33654bf78e64e930943da5b99f95, type: 2}
-  moveSpeed: 5
+  moveSpeed: 7
 --- !u!114 &114153945554897020
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -287,25 +286,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldown: 0
---- !u!114 &114940610847469718
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1383168971096780}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0082ce5da5202d54b8609707e9b6de02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  lightning: {fileID: 0}
-  dropMoney: 0
-  damage: 0
-  dropScore: 0
-  startHealth: 0
-  waypoints: {fileID: 0}
-  moveSpeed: 2
 --- !u!114 &114997091143916318
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -369,7 +349,7 @@ SpriteRenderer:
   m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d32eb0bec3512e549934346dba734c88, type: 3}
-  m_Color: {r: 1, g: 0.07075471, b: 0.07075471, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
