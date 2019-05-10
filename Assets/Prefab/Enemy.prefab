@@ -207,7 +207,7 @@ MonoBehaviour:
   dropMoney: 10
   damage: 5
   dropScore: 100
-  startHealth: 3
+  startHealth: 10
   waypoints: {fileID: 4278347123645380, guid: e8fc33654bf78e64e930943da5b99f95, type: 2}
   moveSpeed: 5
 --- !u!114 &114153945554897020
@@ -285,6 +285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4120682a742a1cb48bb845b10ff30619, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cooldown: 0
 --- !u!114 &114997091143916318
 MonoBehaviour:
   m_ObjectHideFlags: 1
