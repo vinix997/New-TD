@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour {
        // healthSlider.value = health;
        
         playerHealth.fillAmount = health / maxHealth;
-        moneyText.text = "Money : " + money.ToString();
+        moneyText.text = ": " + money.ToString();
         scoreText.text = "Score : " + score.ToString();
         spawnCooldown -= Time.deltaTime;
         if(spawnCooldown <= 0)
