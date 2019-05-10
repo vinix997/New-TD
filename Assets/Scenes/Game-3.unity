@@ -5132,6 +5132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1167996799}
   - component: {fileID: 1167996798}
+  - component: {fileID: 1167996800}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -5151,9 +5152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1383168971096780, guid: edb1cde1233fc37499ac98cffb966866, type: 2}
-  enemy2: {fileID: 1383168971096780, guid: ceab647b0c8cf524a91d411243e37dd9, type: 2}
   spawnPoint: {fileID: 1167996799}
-  spawnPoint2: {fileID: 862589367}
   moneyText: {fileID: 1459565010}
   scoreText: {fileID: 1457195780}
   loseScreen: {fileID: 672612287}
@@ -5164,7 +5163,6 @@ MonoBehaviour:
   health: 0
   maxHealth: 30
   range: 10
-  rangeHard: 20
 --- !u!4 &1167996799
 Transform:
   m_ObjectHideFlags: 0
@@ -5178,6 +5176,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1167996800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1167996797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c4cc2ecd4990f74eb67362ab9dc6ba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy2: {fileID: 1383168971096780, guid: ceab647b0c8cf524a91d411243e37dd9, type: 2}
+  spawnPoint2: {fileID: 862589367}
+  rangeHard: 20
 --- !u!1 &1174404196
 GameObject:
   m_ObjectHideFlags: 0
