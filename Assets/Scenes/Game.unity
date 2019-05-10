@@ -2290,7 +2290,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.5252281, g: 0.8679245, b: 0.45443216, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -4727,6 +4727,11 @@ Prefab:
     - target: {fileID: 1796179901805770, guid: e8fc33654bf78e64e930943da5b99f95, type: 2}
       propertyPath: m_Name
       value: New Sprite (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 212375768558048696, guid: e8fc33654bf78e64e930943da5b99f95,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8fc33654bf78e64e930943da5b99f95, type: 2}
