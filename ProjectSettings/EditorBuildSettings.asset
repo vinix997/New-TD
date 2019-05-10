@@ -12,8 +12,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Stage Selection.unity
     guid: d006ec411ae22094fb469990fbfbcb15
   - enabled: 1
+    path: Assets/Scenes/HighScore.unity
+    guid: dfefdf83707f29146be801604e4f2840
+  - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Game-2.unity
+    guid: c433bbef2a3f23549bb1798309cdf11d
+  - enabled: 1
+    path: Assets/Scenes/Game-3.unity
+    guid: ed70999e6bb7d1e4f86a1186d4a53b29
   - enabled: 1
     path: Assets/Scenes/Option.unity
     guid: adde8a16a671c2040a606fc22d0ce4ca

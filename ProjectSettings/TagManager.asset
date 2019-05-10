@@ -9,6 +9,7 @@ TagManager:
   - End
   - SlowBullet
   - AoEBullet
+  - OverScreen
   layers:
   - Default
   - TransparentFX

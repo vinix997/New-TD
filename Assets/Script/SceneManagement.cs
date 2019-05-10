@@ -18,9 +18,17 @@ public class SceneManagement : MonoBehaviour {
     {
         SceneManager.LoadScene(1);
     }
-    public void PlayGame()
+    public void Stage1()
     {
         SceneManager.LoadScene("Game");
+    }
+     public void Stage2()
+    {
+        SceneManager.LoadScene("Game-2");
+    }
+     public void Stage3()
+    {
+        SceneManager.LoadScene("Game-3");
     }
     public void GoToMainMenu()
     {
@@ -50,5 +58,9 @@ public class SceneManagement : MonoBehaviour {
     {
         Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    public void GoToHighScore()
+    {
+        SceneManager.LoadScene("HighScore");
     }
 }

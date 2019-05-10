@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour {
 
     [SerializeField] private Text moneyText,scoreText;
 
+    [SerializeField] private GameObject loseScreen;
     [Header("Unity Stuff")]
     public Image playerHealth;
 
@@ -30,14 +31,13 @@ public class GameManager : MonoBehaviour {
         score = 0;
         health = maxHealth;
         spawnCooldown = 2f;
+        //loseScreen = GameObject.FindGameObjectWithTag("OverScreen");
         // healthSlider.maxValue = maxhealth;
         // healthSlider.value = health;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-       // healthSlider.value = health;
-       
         playerHealth.fillAmount = health / maxHealth;
         moneyText.text = ": " + money.ToString();
         scoreText.text = "Score : " + score.ToString();
@@ -57,9 +57,10 @@ public class GameManager : MonoBehaviour {
     {
         if(health <= 0)
         {
-            Time.timeScale = 0;
+           
             if(PlayerPrefs.GetInt("HighScore",0) <= score)
             PlayerPrefs.SetInt("HighScore", score);
+            loseScreen.SetActive(true); 
         }
     }
 }
