@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 58042668272949142}
   - component: {fileID: 50193727437329648}
   - component: {fileID: 82378598373653474}
+  - component: {fileID: 95883337995132332}
   m_Layer: 0
   m_Name: AoE Bullet
   m_TagString: AoEBullet
@@ -174,6 +175,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &95883337995132332
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1917991206861058}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3b668f5d535cb404e9cc06081d3c2ef5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114375022574189830
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -187,7 +206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 0}
   vanishTime: 1
-  damage: 2
+  damage: 8
 --- !u!212 &212606940614943930
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -223,8 +242,8 @@ SpriteRenderer:
   m_SortingLayerID: -556298565
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0640a5fededc75f44a9107b9749ad3b0, type: 3}
-  m_Color: {r: 0.24528301, g: 0.0034709796, b: 0.0034709796, a: 1}
+  m_Sprite: {fileID: 21300000, guid: f3211d94648d815419f95f686a68547d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

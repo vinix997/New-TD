@@ -24,7 +24,7 @@ public class Land : MonoBehaviour {
                 else
                     return;
                 FindObjectOfType<GameManager>().selectedWizard.GetComponent<WizardTower>().land = gameObject;
-                Instantiate(GameManager.FindObjectOfType<GameManager>().selectedWizard, transform.position, Quaternion.identity, transform);
+                Instantiate(GameManager.FindObjectOfType<GameManager>().selectedWizard, transform.position + new Vector3(0,5,0), Quaternion.identity, transform);
                 isEmpty = false;
                 GameManager.FindObjectOfType<GameManager>().selectedWizard = null;
             }
@@ -35,7 +35,7 @@ public class Land : MonoBehaviour {
                 else
                     return;
                 FindObjectOfType<GameManager>().selectedWizard.GetComponent<AoE_Tower>().land = gameObject;
-                Instantiate(GameManager.FindObjectOfType<GameManager>().selectedWizard, transform.position, Quaternion.identity, transform);
+                Instantiate(GameManager.FindObjectOfType<GameManager>().selectedWizard, transform.position + new Vector3(0, 5, 0), Quaternion.identity, transform);
                 isEmpty = false;
                 GameManager.FindObjectOfType<GameManager>().selectedWizard = null;
             }
