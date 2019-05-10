@@ -22,6 +22,7 @@ public class Enemy : MonoBehaviour {
     private float moveSpeed = 2f;
     void Start()
     {
+       // startHealth = Random.Range(30,45);
         health=startHealth;
     }
 	// Update is called once per frame

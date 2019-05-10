@@ -43,21 +43,24 @@ public class GameManager : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	public void Update () {
         playerHealth.fillAmount = health / maxHealth;
         moneyText.text = ": " + money.ToString();
         scoreText.text = "Score : " + score.ToString();
         spawnCooldown -= Time.deltaTime;
         spawnCooldown2 -= Time.deltaTime;
+        
         if(spawnCooldown <= 0)
         {
             Instantiate(enemy,spawnPoint.position,Quaternion.identity);
+            enemy.GetComponent<Enemy>().startHealth=(Random.Range(10,30));
             spawnCooldown = 2f;
             //counter++;
         }
         if(spawnCooldown2 <= 0)
         {
             Instantiate(enemy2,spawnPoint2.position,Quaternion.identity);
+            enemy2.GetComponent<Enemy>().startHealth=(Random.Range(20,40));
             spawnCooldown2 = 2.5f;
         }
         //if (counter >= 3)
