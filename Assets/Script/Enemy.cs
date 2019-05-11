@@ -19,10 +19,13 @@ public class Enemy : MonoBehaviour {
 
     // Walk speed that can be set in Inspector
     [SerializeField]
-    private float moveSpeed = 2f;
+    private float moveSpeed;
+    [SerializeField]
+    private float maxSpeed;
     void Start()
     {
        // startHealth = Random.Range(30,45);
+       moveSpeed = maxSpeed;
         health=startHealth;
     }
 	// Update is called once per frame
@@ -35,7 +38,7 @@ public class Enemy : MonoBehaviour {
         {
             moveSpeed = 5;
         }
-        else moveSpeed = 15;
+        else moveSpeed = maxSpeed;
 	}
     private void Move()
     {

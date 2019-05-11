@@ -253,9 +253,10 @@ MonoBehaviour:
   dropMoney: 0
   damage: 0
   dropScore: 0
-  startHealth: 193.12054
+  startHealth: 36.24353
   waypoints: {fileID: 4278347123645380, guid: e8fc33654bf78e64e930943da5b99f95, type: 2}
-  moveSpeed: 2
+  moveSpeed: 0
+  maxSpeed: 10
 --- !u!114 &114439634821696244
 MonoBehaviour:
   m_ObjectHideFlags: 1
