@@ -64,6 +64,7 @@ public class AoE_Tower : MonoBehaviour {
         attackCooldown -= Time.deltaTime;
         if (enemy != null && attackCooldown <= 0)
         {
+            GetComponent<Animator>().SetTrigger("Attack");
             bullet.GetComponent<AoE_BulletPrep>().enemy = enemy.transform;
             bullet.GetComponent<AoE_BulletPrep>().damage = damage;
             timer += Time.deltaTime;

@@ -67,6 +67,7 @@ public class WizardTower : MonoBehaviour {
     {
         if (enemy != null && attackCooldown <= 0)
         {
+            GetComponent<Animator>().SetTrigger("Attack");
             enemy.GetComponent<Enemy>().TakeDamage(damage);
             attackCooldown = cooldownTime;
             SoundManager.PlaySound("electric");

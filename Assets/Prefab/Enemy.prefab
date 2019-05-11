@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 114153806177629712}
   - component: {fileID: 61700533001294638}
   - component: {fileID: 50011020060945164}
+  - component: {fileID: 95564505381458604}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -164,7 +165,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.6125, y: 0.3625}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -173,6 +174,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!95 &95564505381458604
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1383168971096780}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 85869b0da7aecbb4595fcafeec576cc8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!95 &95910422498764948
 Animator:
   serializedVersion: 3
@@ -207,7 +226,7 @@ MonoBehaviour:
   dropMoney: 10
   damage: 5
   dropScore: 100
-  startHealth: 178.51135
+  startHealth: 17.821444
   waypoints: {fileID: 4278347123645380, guid: e8fc33654bf78e64e930943da5b99f95, type: 2}
   moveSpeed: 5
 --- !u!114 &114153945554897020
@@ -348,8 +367,8 @@ SpriteRenderer:
   m_SortingLayerID: -2060136629
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d32eb0bec3512e549934346dba734c88, type: 3}
-  m_Color: {r: 1, g: 0.07075471, b: 0.07075471, a: 1}
+  m_Sprite: {fileID: 21300012, guid: 48106536621f1564f967a93ebc2de95e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
