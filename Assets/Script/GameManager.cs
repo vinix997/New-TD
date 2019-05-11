@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour {
 
     [SerializeField] private GameObject loseScreen;
 
+  
+
     [Header("Unity Stuff")]
     public Image playerHealth;
 
@@ -36,13 +38,13 @@ public class GameManager : MonoBehaviour {
         score = 0;
         health = maxHealth;
         spawnCooldown = 2f;
-      
+        
+
         
 	}
 	
 	// Update is called once per frame
 	public void Update () {
-    
         playerHealth.fillAmount = health / maxHealth;
         moneyText.text = ": " + money.ToString();
         scoreText.text = "Score : " + score.ToString();
@@ -66,10 +68,28 @@ public class GameManager : MonoBehaviour {
     {
         if(health <= 0)
         {
+            GameObject level = GameObject.Find("LevelDecider");
+            LevelDecider levelDecider = level.GetComponent<LevelDecider>();
             Time.timeScale=0;
-            if(PlayerPrefs.GetInt("HighScore",0) <= score)
-            PlayerPrefs.SetInt("HighScore", score);
             loseScreen.SetActive(true); 
+            if(levelDecider.levels == 1)
+            {
+            if(PlayerPrefs.GetInt("Stage1 score",0) <= score)
+            PlayerPrefs.SetInt("Stage1 score", score);
+            
+            }
+            else if(levelDecider.levels == 2)
+            {
+            if(PlayerPrefs.GetInt("Stage2 score",0) <= score)
+            PlayerPrefs.SetInt("Stage2 score", score);
+            
+            }
+            else if(levelDecider.levels == 3)
+            {
+            if(PlayerPrefs.GetInt("Stage3 score",0) <= score)
+            PlayerPrefs.SetInt("Stage3 score", score);
+            
+            }
         }
     }
 }
