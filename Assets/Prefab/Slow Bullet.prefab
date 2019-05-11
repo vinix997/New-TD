@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 50759762538438306}
   - component: {fileID: 114423473472105270}
   - component: {fileID: 82874048477342370}
+  - component: {fileID: 95660423481665858}
   m_Layer: 0
   m_Name: Slow Bullet
   m_TagString: SlowBullet
@@ -174,6 +175,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &95660423481665858
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1208228849752644}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7a3b00b9b3fc83044b376b35793591cc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114423473472105270
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -188,7 +207,7 @@ MonoBehaviour:
   explosion: {fileID: 0}
   enemy: {fileID: 0}
   vanishTime: 3
-  damage: 0
+  damage: 1
 --- !u!212 &212200357672397860
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -224,8 +243,8 @@ SpriteRenderer:
   m_SortingLayerID: -556298565
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0640a5fededc75f44a9107b9749ad3b0, type: 3}
-  m_Color: {r: 0.37673548, g: 0.9435292, b: 0.9622642, a: 1}
+  m_Sprite: {fileID: 21300000, guid: f9a7fb4f2013e4644add920947a32e49, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
